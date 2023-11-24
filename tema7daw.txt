@@ -1,0 +1,12 @@
+.ts:
+  public counter: number = 0;
+  decrCounter(){
+    this.counter=this.counter-1;
+}
+.html:
+<mat-card>
+	<mat-card-content>
+		<button mat-raised-button color="accent" (click)="decrCounter()"> Decr Counter
+		</button>
+	</mat-card-content>
+</mat-card>
